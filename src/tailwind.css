@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+
+@layer components{
+    .btn-primary{
+    @apply px-4 py-1 border border-green-300 rounded-full text-sm text-gray-50 font-semibold
+    hover:bg-black hover:text-yellow-200 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-gray-100;
+}
+
+}
+
+
+@variants hover, focus{
+    .rotate-0{
+        transform: rotate(30deg);
+    }
+}
+@media screen(sm) {
+    .custom{
+        background-image: linear-gradient(red,yellow);
+    }
+}
+@media screen(md) {
+    .bg-img{
+        background-image: linear-gradient(black,yellow);
+    }
+}
+@media screen(lg) {
+    .bg-lg{
+        background-image: linear-gradient(brown, gray);
+    }
+}
+@media screen(xl){
+    .bg-xl{
+        background-image: linear-gradient(green, pink);
+    }
+}
